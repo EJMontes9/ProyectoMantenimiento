@@ -1,0 +1,11 @@
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\ProyectoPP.exe.config
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\ProyectoPP.exe
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\ProyectoPP.pdb
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.Properties.Resources.resources
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.exe
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.pdb
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.frmPrincipal.resources
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.frmRegCliente.resources
