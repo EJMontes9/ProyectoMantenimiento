@@ -9,3 +9,13 @@ C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.exe
 C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.pdb
 C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.frmPrincipal.resources
 C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.frmRegCliente.resources
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.frmRegMante.resources
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.frmRegMecanico.resources
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\Controller.dll
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\Model.dll
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\Controller.pdb
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\Model.pdb
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\Controller.dll.config
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\bin\Debug\Model.dll.config
+C:\Users\erick\source\repos\ProyectoPP\ProyectoPP\obj\Debug\ProyectoPP.frmRepuestosUt.resources

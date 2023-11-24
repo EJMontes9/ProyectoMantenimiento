@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,5 +24,7 @@ namespace Model
 
         public string Telefono { get => telefono; set => telefono = value; }
         public string Direccion { get => direccion; set => direccion = value; }
+
+        
     }
 }

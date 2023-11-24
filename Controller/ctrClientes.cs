@@ -1,26 +1,40 @@
 ﻿using Model;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Controller
 {
     public class ctrClientes
     {
-        private List<Model.clientes> listaClientes = new List<Model.clientes>();
-
-        public static ctrClientes obtenerctrClientes()
+        private List<clientes> list = new List<clientes>();
+        private static ctrClientes ctrCliente = new ctrClientes();
+        public static ctrClientes obtenerClientes()
         {
-            return new ctrClientes();
+            return ctrCliente;
         }
 
-        public void agregarCliente(string nombre, string apellido, string cedula, string telefono, string direccion)
+        public string IngresarClientes(string nombre, string apellido, string cedula, string telefono, string direccion)
         {
-            Model.clientes cliente = new Model.clientes(nombre, apellido, cedula, telefono, direccion);
-            listaClientes.Add(cliente);
+            clientes cliente = new clientes(nombre, apellido, cedula, telefono, direccion);
+            list.Add(cliente);
+            return "Cliente ingresado correctamente";
         }
-        
+
+        public List<string> ListarClientes()
+        {
+            //recorrer la list y retornar el nombre de cada cliente
+            List<string> lista = new List<string>();
+            foreach (clientes cliente in list)
+            {
+                System.Console.WriteLine(cliente.Nombre);
+                lista.Add(cliente.Nombre);
+            }
+            return lista;
+        } 
     }
 }

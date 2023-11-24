@@ -1,0 +1,14 @@
+C:\Users\erick\source\repos\ProyectoPP\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\erick\source\repos\ProyectoPP\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\Model.dll
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\Model.pdb
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\System.Data.SqlClient.dll
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\System.Data.SqlClient.xml
+C:\Users\erick\source\repos\ProyectoPP\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\erick\source\repos\ProyectoPP\Model\obj\Debug\Model.dll
+C:\Users\erick\source\repos\ProyectoPP\Model\obj\Debug\Model.pdb
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\Model.dll.config
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.dll
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.xml
+C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.SqlServer.xml

@@ -28,5 +28,17 @@ namespace ProyectoPP
             frmRegMecanico frm = new frmRegMecanico();
             frm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmRegMante frm = new frmRegMante();
+            frm.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Terminar la ejecucion del programa
+            Application.Exit();
+        }
     }
 }

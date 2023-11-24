@@ -20,7 +20,14 @@ namespace ProyectoPP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ctrClientes.obtenerctrClientes().agregarCliente(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtEspecialidad.Text, txtExperiencia.Text);
+            ctrMecanicos ctrMecanico = new ctrMecanicos();
+            ctrMecanico.agregarMecanicos(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtEspecialidad.Text, txtExperiencia.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Cerrar el formulario
+            this.Close();
         }
     }
 }
