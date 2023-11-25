@@ -31,24 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.cbCliente = new System.Windows.Forms.ComboBox();
-            this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.proyectoPPDataSet = new ProyectoPP.ProyectoPPDataSet();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesTableAdapter = new ProyectoPP.ProyectoPPDataSetTableAdapters.clientesTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbMecanico = new System.Windows.Forms.ComboBox();
             this.mecanicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proyectoPPDataSet11 = new ProyectoPP.ProyectoPPDataSet1();
-            this.proyectoPPDataSet1 = new ProyectoPP.ProyectoPPDataSet1();
-            this.mecanicosTableAdapter = new ProyectoPP.ProyectoPPDataSet1TableAdapters.mecanicosTableAdapter();
-            this.tableAdapterManager = new ProyectoPP.ProyectoPPDataSet1TableAdapters.TableAdapterManager();
-            this.mantenimientoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mantenimientoTableAdapter = new ProyectoPP.ProyectoPPDataSet1TableAdapters.mantenimientoTableAdapter();
             this.button4 = new System.Windows.Forms.Button();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbVehiculo = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,14 +54,16 @@
             this.rtTrabajos = new System.Windows.Forms.RichTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.cbTipo = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoPPDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            this.txtRepuesto = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.gbRepuestos = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mecanicosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoPPDataSet11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoPPDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mantenimientoBindingSource)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gbVehiculo.SuspendLayout();
+            this.gbRepuestos.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -93,26 +86,6 @@
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(169, 25);
             this.cbCliente.TabIndex = 3;
-            this.cbCliente.SelectedIndexChanged += new System.EventHandler(this.cbCliente_SelectedIndexChanged);
-            // 
-            // clientesBindingSource1
-            // 
-            this.clientesBindingSource1.DataMember = "clientes";
-            this.clientesBindingSource1.DataSource = this.proyectoPPDataSet;
-            this.clientesBindingSource1.CurrentChanged += new System.EventHandler(this.clientesBindingSource1_CurrentChanged);
-            // 
-            // proyectoPPDataSet
-            // 
-            this.proyectoPPDataSet.DataSetName = "ProyectoPPDataSet";
-            this.proyectoPPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.CurrentChanged += new System.EventHandler(this.clientesBindingSource_CurrentChanged);
-            // 
-            // clientesTableAdapter
-            // 
-            this.clientesTableAdapter.ClearBeforeFill = true;
             // 
             // label3
             // 
@@ -145,39 +118,6 @@
             this.cbMecanico.Name = "cbMecanico";
             this.cbMecanico.Size = new System.Drawing.Size(169, 25);
             this.cbMecanico.TabIndex = 10;
-            // 
-            // mecanicosBindingSource
-            // 
-            this.mecanicosBindingSource.DataMember = "mecanicos";
-            this.mecanicosBindingSource.DataSource = this.proyectoPPDataSet11;
-            // 
-            // proyectoPPDataSet11
-            // 
-            this.proyectoPPDataSet11.DataSetName = "ProyectoPPDataSet1";
-            this.proyectoPPDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // proyectoPPDataSet1
-            // 
-            this.proyectoPPDataSet1.DataSetName = "ProyectoPPDataSet1";
-            this.proyectoPPDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mecanicosTableAdapter
-            // 
-            this.mecanicosTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.clientesTableAdapter = null;
-            this.tableAdapterManager.mantenimientoTableAdapter = null;
-            this.tableAdapterManager.mecanicosTableAdapter = this.mecanicosTableAdapter;
-            this.tableAdapterManager.UpdateOrder = ProyectoPP.ProyectoPPDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.vehiculoTableAdapter = null;
-            // 
-            // mantenimientoBindingSource
-            // 
-            this.mantenimientoBindingSource.DataMember = "mantenimiento";
-            this.mantenimientoBindingSource.DataSource = this.proyectoPPDataSet11;
             // 
             // mantenimientoTableAdapter
             // 
@@ -213,24 +153,24 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Fecha:";
             // 
-            // groupBox1
+            // gbVehiculo
             // 
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.txtColor);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtMarca);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtModelo);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtPlaca);
-            this.groupBox1.Font = new System.Drawing.Font("Book Antiqua", 11.25F);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(16, 171);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(548, 138);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Vehiculo";
+            this.gbVehiculo.Controls.Add(this.label8);
+            this.gbVehiculo.Controls.Add(this.txtColor);
+            this.gbVehiculo.Controls.Add(this.label7);
+            this.gbVehiculo.Controls.Add(this.txtMarca);
+            this.gbVehiculo.Controls.Add(this.label6);
+            this.gbVehiculo.Controls.Add(this.txtModelo);
+            this.gbVehiculo.Controls.Add(this.label5);
+            this.gbVehiculo.Controls.Add(this.txtPlaca);
+            this.gbVehiculo.Font = new System.Drawing.Font("Book Antiqua", 11.25F);
+            this.gbVehiculo.ForeColor = System.Drawing.Color.White;
+            this.gbVehiculo.Location = new System.Drawing.Point(16, 171);
+            this.gbVehiculo.Name = "gbVehiculo";
+            this.gbVehiculo.Size = new System.Drawing.Size(548, 138);
+            this.gbVehiculo.TabIndex = 15;
+            this.gbVehiculo.TabStop = false;
+            this.gbVehiculo.Text = "Vehiculo";
             // 
             // label8
             // 
@@ -365,20 +305,108 @@
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(169, 25);
             this.cbTipo.TabIndex = 21;
+            this.cbTipo.SelectedIndexChanged += new System.EventHandler(this.cbTipoIndexChanged);
+            // 
+            // txtRepuesto
+            // 
+            this.txtRepuesto.Location = new System.Drawing.Point(89, 31);
+            this.txtRepuesto.Name = "txtRepuesto";
+            this.txtRepuesto.Size = new System.Drawing.Size(254, 26);
+            this.txtRepuesto.TabIndex = 16;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Book Antiqua", 11.25F);
+            this.label15.ForeColor = System.Drawing.SystemColors.Control;
+            this.label15.Location = new System.Drawing.Point(7, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(74, 20);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "Repuesto:";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(430, 31);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(102, 26);
+            this.txtPrecio.TabIndex = 20;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Book Antiqua", 11.25F);
+            this.label13.ForeColor = System.Drawing.SystemColors.Control;
+            this.label13.Location = new System.Drawing.Point(363, 34);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(54, 20);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Precio:";
+            // 
+            // gbRepuestos
+            // 
+            this.gbRepuestos.Controls.Add(this.label13);
+            this.gbRepuestos.Controls.Add(this.txtPrecio);
+            this.gbRepuestos.Controls.Add(this.label15);
+            this.gbRepuestos.Controls.Add(this.txtRepuesto);
+            this.gbRepuestos.Font = new System.Drawing.Font("Book Antiqua", 11.25F);
+            this.gbRepuestos.ForeColor = System.Drawing.Color.White;
+            this.gbRepuestos.Location = new System.Drawing.Point(12, 454);
+            this.gbRepuestos.Name = "gbRepuestos";
+            this.gbRepuestos.Size = new System.Drawing.Size(548, 85);
+            this.gbRepuestos.TabIndex = 22;
+            this.gbRepuestos.TabStop = false;
+            this.gbRepuestos.Text = "Repuestos";
+            this.gbRepuestos.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Violet;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(417, 558);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 34);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Violet;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Location = new System.Drawing.Point(27, 558);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 34);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "Historial";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmRegMante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ClientSize = new System.Drawing.Size(570, 467);
+            this.ClientSize = new System.Drawing.Size(570, 604);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.gbRepuestos);
             this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.rtTrabajos);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.rtDiagnostico);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbVehiculo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.button4);
@@ -391,16 +419,11 @@
             this.Name = "frmRegMante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegMante";
-            this.Load += new System.EventHandler(this.frmRegMante_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoPPDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mecanicosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoPPDataSet11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoPPDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mantenimientoBindingSource)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbVehiculo.ResumeLayout(false);
+            this.gbVehiculo.PerformLayout();
+            this.gbRepuestos.ResumeLayout(false);
+            this.gbRepuestos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,24 +433,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbCliente;
-        private System.Windows.Forms.BindingSource clientesBindingSource;
-        private ProyectoPPDataSet proyectoPPDataSet;
-        private System.Windows.Forms.BindingSource clientesBindingSource1;
-        private ProyectoPPDataSetTableAdapters.clientesTableAdapter clientesTableAdapter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbMecanico;
-        private ProyectoPPDataSet1 proyectoPPDataSet1;
-        private ProyectoPPDataSet1TableAdapters.mecanicosTableAdapter mecanicosTableAdapter;
-        private ProyectoPPDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private ProyectoPPDataSet1 proyectoPPDataSet11;
-        private System.Windows.Forms.BindingSource mantenimientoBindingSource;
         private ProyectoPPDataSet1TableAdapters.mantenimientoTableAdapter mantenimientoTableAdapter;
         private System.Windows.Forms.BindingSource mecanicosBindingSource;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbVehiculo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label label8;
@@ -442,5 +456,12 @@
         private System.Windows.Forms.RichTextBox rtTrabajos;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cbTipo;
+        private System.Windows.Forms.TextBox txtRepuesto;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.GroupBox gbRepuestos;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

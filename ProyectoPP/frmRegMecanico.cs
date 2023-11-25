@@ -20,8 +20,17 @@ namespace ProyectoPP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ctrMecanicos ctrMecanico = new ctrMecanicos();
+            ctrMecanicos ctrMecanico = ctrMecanicos.obtenerctrMecanicos();
             ctrMecanico.agregarMecanicos(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtEspecialidad.Text, txtExperiencia.Text);
+
+            MessageBox.Show("Mecanico registrado con exito");
+
+            //limpiar los campos
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtCedula.Clear();
+            txtEspecialidad.Clear();
+            txtExperiencia.Clear();
         }
 
         private void button4_Click(object sender, EventArgs e)

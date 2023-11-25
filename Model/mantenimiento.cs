@@ -9,8 +9,8 @@ namespace Model
     public class mantenimiento
     {
         private string codigo;
-        private mecanicos mecanico;
-        private clientes cliente;
+        private string mecanico;
+        private string cliente;
         private string fecha;
         private vehiculos vehiculo;
         private string diagnostico;
@@ -18,7 +18,7 @@ namespace Model
         private string tipoMantenimiento;
         private decimal totPagar;
 
-        public mantenimiento(string codigo, mecanicos mecanico, clientes cliente, string fecha, vehiculos vehiculo, string diagnostico, string trabajosRealizados, string tipoMantenimiento, decimal totPagar)
+        public mantenimiento(string codigo, string mecanico, string cliente, string fecha, vehiculos vehiculo, string diagnostico, string trabajosRealizados, string tipoMantenimiento, decimal totPagar)
         {
             this.codigo = codigo;
             this.mecanico = mecanico;
@@ -36,8 +36,8 @@ namespace Model
         }
 
         public string Codigo { get => codigo; set => codigo = value; }
-        public mecanicos Mecanico { get => mecanico; set => mecanico = value; }
-        public clientes Cliente { get => cliente; set => cliente = value; }
+        public string Mecanico { get => mecanico; set => mecanico = value; }
+        public string Cliente { get => cliente; set => cliente = value; }
         public string Fecha { get => fecha; set => fecha = value; }
         public vehiculos Vehiculo { get => vehiculo; set => vehiculo = value; }
         public string Diagnostico { get => diagnostico; set => diagnostico = value; }

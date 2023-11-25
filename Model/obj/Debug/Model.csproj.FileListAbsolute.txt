@@ -12,3 +12,17 @@ C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.dll
 C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.xml
 C:\Users\erick\source\repos\ProyectoPP\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\Model.dll.config
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\Model.dll
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\Model.pdb
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\EntityFramework.dll
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\System.Data.SqlClient.dll
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\EntityFramework.xml
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Trabajos\ProyectoMantenimiento\Model\bin\Debug\System.Data.SqlClient.xml
+D:\Trabajos\ProyectoMantenimiento\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Trabajos\ProyectoMantenimiento\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Trabajos\ProyectoMantenimiento\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Trabajos\ProyectoMantenimiento\Model\obj\Debug\Model.dll
+D:\Trabajos\ProyectoMantenimiento\Model\obj\Debug\Model.pdb

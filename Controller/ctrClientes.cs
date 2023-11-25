@@ -1,11 +1,9 @@
 ﻿using Model;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 
 namespace Controller
 {
@@ -27,11 +25,9 @@ namespace Controller
 
         public List<string> ListarClientes()
         {
-            //recorrer la list y retornar el nombre de cada cliente
             List<string> lista = new List<string>();
             foreach (clientes cliente in list)
             {
-                System.Console.WriteLine(cliente.Nombre);
                 lista.Add(cliente.Nombre);
             }
             return lista;

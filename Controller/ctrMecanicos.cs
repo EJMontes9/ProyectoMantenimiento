@@ -10,16 +10,17 @@ namespace Controller
     public class ctrMecanicos
     {
         private List<mecanicos> listaMecanicos = new List<mecanicos>();
-        private static ctrMecanicos mecanico = new ctrMecanicos();
-        public static ctrMecanicos obtenerctrClientes()
+        private static ctrMecanicos ctrmecanico = new ctrMecanicos();
+        public static ctrMecanicos obtenerctrMecanicos()
         {
-            return mecanico;
+            return ctrmecanico;
         }
 
-        public void agregarMecanicos(string nombre, string apellido, string cedula, string especialidad, string experiencia)
+        public string agregarMecanicos(string nombre, string apellido, string cedula, string especialidad, string experiencia)
         {
            mecanicos mecanico = new mecanicos(nombre, apellido, cedula, especialidad, experiencia);
-            listaMecanicos.Add(mecanico);
+           listaMecanicos.Add(mecanico);
+           return "Mecanico ingresado correctamente";
         }
 
         public List<string> listarMecanicos()

@@ -14,66 +14,29 @@ namespace ProyectoPP
     public partial class frmRegMante : Form
     {
         private ctrClientes ctrClientes = ctrClientes.obtenerClientes();
+        private ctrMecanicos ctrMecanicos = ctrMecanicos.obtenerctrMecanicos();
+        private ctrMantenimiento ctrMantenimiento = ctrMantenimiento.obtenerctrMantenimiento();
+        private ctrVehiculos ctrVehiculos = ctrVehiculos.obtenerctrVehiculos();
         public frmRegMante()
         {
+          
             InitializeComponent();
+            llenarMecanicos();
             llenarClientes();
         }
 
         private void llenarClientes()
         {
-            List<string> lista = ctrClientes.ListarClientes();
+            List<string> listacli = ctrClientes.ListarClientes();
             
-            cbCliente.DataSource = lista;
+            cbCliente.DataSource = listacli;
         }
 
-        private void frmRegMante_Load(object sender, EventArgs e)
+        private void llenarMecanicos()
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoPPDataSet11.mecanicos' Puede moverla o quitarla según sea necesario.
-            this.mecanicosTableAdapter.Fill(this.proyectoPPDataSet11.mecanicos);
-            // TODO: esta línea de código carga datos en la tabla 'proyectoPPDataSet11.mantenimiento' Puede moverla o quitarla según sea necesario.
-            this.mantenimientoTableAdapter.Fill(this.proyectoPPDataSet11.mantenimiento);
-            // TODO: esta línea de código carga datos en la tabla 'proyectoPPDataSet.clientes' Puede moverla o quitarla según sea necesario.
-            this.clientesTableAdapter.Fill(this.proyectoPPDataSet.clientes);
-            // TODO: esta línea de código carga datos en la tabla 'proyectoPPDataSet1.clientes' Puede moverla o quitarla según sea necesario.
-            
+            List<string> listamec = ctrMecanicos.listarMecanicos();
 
-        }
-
-        private void clientesBindingSource1_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.clientesTableAdapter.FillBy(this.proyectoPPDataSet.clientes);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
-        private void clientesBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fillByToolStripButton_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                this.mecanicosTableAdapter.FillBy(this.proyectoPPDataSet1.mecanicos);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
+            cbMecanico.DataSource = listamec;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -82,9 +45,65 @@ namespace ProyectoPP
             this.Close();
         }
 
-        private void cbCliente_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+        private void cbTipoIndexChanged(object sender, EventArgs e)
+        {
+            //Obtengo el valor del combobox
+            string tipo = cbTipo.SelectedItem.ToString();
+            gbRepuestos.Visible = false;
+
+            if (tipo == "Correctivo")
+            {
+                gbRepuestos.Visible = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+            string codigo = ""+ctrMantenimiento.generarSecuencial();
+
+            decimal TotPagar= 0;
+
+            if (cbTipo.Text == "Preventivo")
+            {
+                TotPagar= 350;
+            }
+
+            if (cbTipo.Text == "Correctivo")
+            {
+                TotPagar =decimal.Parse(txtPrecio.Text) + 100;
+                
+            }
+            
+            ctrVehiculos.agregarVehiculos(txtPlaca.Text, txtMarca.Text, txtModelo.Text, txtColor.Text);
+            ctrMantenimiento.agregarMantenimiento(codigo, cbMecanico.Text, cbCliente.Text, dtpFecha.Text, ctrVehiculos.obtenerVehiculo(),rtDiagnostico.Text,rtTrabajos.Text,cbTipo.Text,TotPagar);
+
+            MessageBox.Show("Mantenimiento registrado con exito");
+
+            //limpiar los campos
+            cbCliente.Text = "";
+            cbMecanico.Text = "";
+            cbTipo.Text = "";
+            dtpFecha.Text = "";
+
+            txtPlaca.Clear();
+            txtMarca.Clear();
+            txtModelo.Clear();
+            txtColor.Clear();
+
+            rtDiagnostico.Clear();
+            rtTrabajos.Clear();
+
+            txtRepuesto.Clear();
+            txtPrecio.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmListaMante frmListaMante = new frmListaMante();
+            frmListaMante.Show();
         }
     }
 }

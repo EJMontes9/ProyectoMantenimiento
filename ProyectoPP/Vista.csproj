@@ -70,11 +70,11 @@
     <Compile Include="frmRegMecanico.Designer.cs">
       <DependentUpon>frmRegMecanico.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRepuestosUt.cs">
+    <Compile Include="frmListaMante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRepuestosUt.Designer.cs">
-      <DependentUpon>frmRepuestosUt.cs</DependentUpon>
+    <Compile Include="frmListaMante.Designer.cs">
+      <DependentUpon>frmListaMante.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,8 +100,8 @@
     <EmbeddedResource Include="frmRegMecanico.resx">
       <DependentUpon>frmRegMecanico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRepuestosUt.resx">
-      <DependentUpon>frmRepuestosUt.cs</DependentUpon>
+    <EmbeddedResource Include="frmListaMante.resx">
+      <DependentUpon>frmListaMante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +114,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Controller.ctrClientes.datasource" />
+    <None Include="Properties\DataSources\Controller.ctrMantenimiento.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -158,6 +159,10 @@
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{9bf26c3b-0cfb-4722-aa52-770b628f3caf}</Project>
       <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{BCA01993-8F5A-46D1-A3FC-6A742B8F71BA}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
